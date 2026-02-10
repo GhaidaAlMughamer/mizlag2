@@ -6,13 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		88DC9C522F3CB17A00557F5C /* MyActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 88DC9C512F3CB17A00557F5C /* MyActions.sks */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		883C6B722F362D3200339B81 /* mizlag2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mizlag2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88DC9C512F3CB17A00557F5C /* MyActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyActions.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		883C6B742F362D3200339B81 /* mizlag2.0 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {
+				v3.mov = video.avi;
+			};
 			path = mizlag2.0;
 			sourceTree = "<group>";
 		};
@@ -32,6 +40,7 @@
 		883C6B692F362D3200339B81 = {
 			isa = PBXGroup;
 			children = (
+				88DC9C512F3CB17A00557F5C /* MyActions.sks */,
 				883C6B742F362D3200339B81 /* mizlag2.0 */,
 				883C6B732F362D3200339B81 /* Products */,
 			);
@@ -109,6 +118,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DC9C522F3CB17A00557F5C /* MyActions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +261,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626W79CAUX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -282,6 +293,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626W79CAUX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
