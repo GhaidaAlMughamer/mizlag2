@@ -155,8 +155,8 @@ struct NextPageView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 2000)
-                                .rotationEffect(.degrees(-17))
-                                .offset(x: 150, y: 90) // MOVED TO RIGHT AND BOTTOM
+                                .rotationEffect(.degrees(-34))
+                                .offset(x: 123, y: 40) // MOVED TO RIGHT AND BOTTOM
                                 .allowsHitTesting(false)
                                 .shadow(color: .black.opacity(0.4), radius: 10, x: 0, y: 15)
                         }
