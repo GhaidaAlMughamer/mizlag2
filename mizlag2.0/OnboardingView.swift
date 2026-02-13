@@ -121,6 +121,7 @@ struct NextPageView: View {
                             .font(.system(size: 50, weight: .bold))
                             .foregroundColor(.white.opacity(currentPage == 0 ? 0.2 : 0.8))
                     }
+                    //
                     .padding(.leading, 70)
                     .disabled(currentPage == 0)
 
