@@ -248,15 +248,14 @@ struct DossierOverlay: View {
     @Binding var isPresented: Bool
     
     private let staticText = """
-    قبل إغلاق مستشفى عرقه،
-    كان فيه جناح لم يُغلق رسميًا.
-    الجناح رقم 13.
-    المرضى فيه ما كانوا يُسجَّلون بأسماء.
-    كانوا يُسجَّلون بأرقام.
-    آخر ملاحظة محفوظة في السجلات تقول:
-    """
-    
-    private let animatedTextGoal = "“المرضى لم يخرجوا…\nهم بقوا هنا.”"
+      قبل ما يقفل مستشفى عرقه،
+      كان فيه جناح ما تقفل بشكل رسمي.
+      الجناح رقم صفر.
+      المرضى فيه ما كانوا يُسجَّلون بأسماء.
+      كانوا يُسجَّلون بأرقام.
+      آخر ملاحظة محفوظة في السجلات تقول:
+      """
+    private let animatedTextGoal = "“المرضى لم يخرجوا…هم بقوا هنا.”"
     
     @State private var displayedAnimatedText = ""
     
@@ -264,22 +263,21 @@ struct DossierOverlay: View {
         ZStack {
             Color.black.opacity(0.4).ignoresSafeArea()
             
-            HStack(spacing: 80) {
-                Image("paper")
+                Image("oldp")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 250)
+                    .frame(width: 700)
                 
                 VStack(alignment: .trailing, spacing: 0) {
                     Text(staticText)
                         .font(.system(size: 19, weight: .bold, design: .serif))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .multilineTextAlignment(.trailing)
                         .lineSpacing(10)
                     
                     Text(displayedAnimatedText)
                         .font(.system(size: 19, weight: .bold, design: .serif))
-                        .foregroundColor(.white)
+                        .foregroundColor(Color(red: 0.7, green: 0.1, blue: 0.1))
                         .multilineTextAlignment(.trailing)
                         .lineSpacing(10)
                 }
@@ -287,7 +285,7 @@ struct DossierOverlay: View {
                 .onAppear {
                     startTypingAnimation()
                 }
-            }
+            
             .padding(.trailing, 40)
             .padding(.bottom, 80)
             
@@ -297,13 +295,13 @@ struct DossierOverlay: View {
                     print("Game Started!")
                 }) {
                     Text("العب")
-                        .font(.system(size: 32, weight: .black, design: .serif))
+                        .font(.system(size: 12, weight: .black, design: .serif))
                         .foregroundColor(.white)
                         .padding(.horizontal, 90)
                         .padding(.vertical, 22)
                         .background(
                             RoundedRectangle(cornerRadius: 15)
-                                .fill(Color(red: 0.7, green: 0.1, blue: 0.1))
+                                .fill(Color.burgandy)
                         )
                         .shadow(radius: 8)
                 }
